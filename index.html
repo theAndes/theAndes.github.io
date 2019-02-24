@@ -2,10 +2,25 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135080781-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-135080781-1');
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Andrew Esquivel || UT AUSTIN CODING</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML,CSS,API,AJAX,JavaScript,Firebase,Full Stack, JQuery, Austin, veteran, NAVY">
+    <meta name="description"
+        content="Andrew is a Navy Veteran, and has worked with Samsung for over 8 years. Currently @ UT Austin. https://www.linkedin.com/in/andrewesquivel/">
+
+
     <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -39,15 +54,17 @@
 
                     <img src="assets/images/AE.jpg" alt="x" title="x">
 
-                    <p>Thank you for visiting my page. My name is Andrew. I live in the Greater Austin area. Check out
-                        some of my projects below. You can contact me through the form below. Enoy your stay.</p>
+                    <p>Thank you for visiting my page. My name is Andrew, and I live in the Greater Austin area. Check
+                        out
+                        some of my projects below. Enjoy your stay.<p><a href="#contact">Contact me</a></p>
                 </div>
             </section>
             <article id='projects' class="slide">
                 <section>
                     <div class="content">
                         <div id="overflow">
-                            <img src="assets/images/API-AJAX.jpg" alt="">
+                            <a href="https://theandes.github.io/AJAX-API/">
+                                <img src="assets/images/API-AJAX.jpg" alt=""></a>
                         </div>
                         <p>Utlizing rest API</p>
                     </div>
@@ -55,7 +72,8 @@
                 <section>
                     <div class="content">
                         <div id="overflow">
-                            <img src="assets/images/Firebase.png" alt="">
+                            <a href="https://theandes.github.io/train/">
+                                <img src="assets/images/Firebase.png" alt=""></a>
                         </div>
                         <p> Read/Write to Google Firebase Realtime Database</p>
                     </div>
@@ -63,7 +81,8 @@
                 <section>
                     <div class="content">
                         <div id="overflow">
-                            <img src="assets/images/theDog.jpg" alt="">
+                            <a href="https://theandes.github.io/Word-Guess-Game/">
+                                <img src="assets/images/theDog.jpg" alt=""> </a>
                         </div>
                         <p>Some Javascript and DOM manipulation</p>
                     </div>
@@ -71,7 +90,8 @@
                 <section>
                     <div class="content">
                         <div id="overflow">
-                            <img src="assets/images/Trivia.jpg" alt="">
+                            <a href="https://theandes.github.io/triviaGame/">
+                                <img src="assets/images/Trivia.jpg" alt=""> </a>
                         </div>
                         <p>Timers, randomizers, lists, and objects. Javascript/JQuery fun.</p>
                     </div>
@@ -79,7 +99,8 @@
                 <section>
                     <div class="content">
                         <div id="overflow">
-                            <img src="assets/images/RPG.jpg" alt="">
+                            <a href="https://theandes.github.io/unit-4-game/">
+                                <img src="assets/images/RPG.jpg" alt=""></a>
                         </div>
                         <p>Featuring illustrations by my eight year old.</p>
                     </div>
@@ -89,18 +110,18 @@
         <article id="art-2" class="slide">
             <section>
                 <div class="content">
-                    I appreciate comments, adice, or a just a simple hello.
+                    I appreciate comments, advice, or a just a simple hello.
                 </div>
             </section>
             <div class="container">
-                <h1 class="brand">Contact Andrew Esquivel</h1>
+                <!-- <h1 class="brand">Contact Andrew Esquivel</h1> -->
                 <div class="wrapper animated bounceInLeft">
                     <div class="company-info">
-                        <h3>Your Info :)</h3>
+                        <h2 class="brand">Contact Andrew Esquivel</h2>
 
                     </div>
-                    <div class="contact">
-                        <h3> Your Info</h3>
+                    <div class="contact" id="contact">
+                        <!-- <h3> Your Info</h3> -->
                         <!--Alert-->
                         <div class="alert">Your Message has been sent!</div>
 
@@ -144,6 +165,7 @@
             <li><i class="fa fa-road"></i> TEXAS </li>
             <li><i class="fa fa-phone"></i> For a good time call 867-5309</li>
             <li><i class="fa fa-envelope"></i> age.esquivel@gmail.com</li>
+            <i class="fab fa-github"> <a href="https://github.com/theAndes">GitHub: theAndes</a></i>
         </ul>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="assets/javascript/main.js"></script>
