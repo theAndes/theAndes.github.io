@@ -1,0 +1,156 @@
+$modern-colors: (
+    1: #fafafa, 
+    2: #222,
+    3: #000,
+    4: rgba(30,30,30,0.95),
+    5: #fff
+    
+  );
+  @function m-color($color-name){
+    @return map-get($modern-colors, $color-name)
+}
+$height: auto;
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.6;
+    // background-color:m-color(1);
+
+}
+nav{
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: 'up name down';
+    .up {
+        grid-area: up;
+      }
+      .head {
+        grid-area: name;
+      }
+      .down {
+        grid-area: down;
+      }
+}
+.top{
+    position: relative;
+    color: m-color(5);
+    background-color: m-color(4);
+    height: 50px;
+    // h3{
+    //     margin: 0;
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    // }
+}
+header {
+        position: relative;
+        // display: grid;
+
+    #bg-image{        
+        height: 100vh;
+        background-image: url('../images/world.jpg');
+        background-size: cover;
+        background-position: center; 
+    }   
+
+    .intro{
+        position: absolute;
+        color: m-color(5);
+        top: 25%;
+        transform: translateX(100%);
+       
+    }
+}
+
+main {
+    font-size: 1.5em;
+        // .top{
+        //     position: relative;
+        //     color: m-color(5);
+        //     background-color: m-color(4);
+        //     height: 60px;
+        //     h3{
+        //         margin: 0;
+        //         position: absolute;
+        //         top: 50%;
+        //         left: 50%;
+        //         transform: translate(-50%, -50%);
+        //     }
+        // }
+}
+
+#projects{
+    section{margin: 10px 0;
+
+    }
+}
+section{
+      height: $height;
+      margin: 10px 0;
+      .content{
+          padding: 1em;
+        //   text-align: center;
+    }
+
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.links{
+      display: none;
+}
+  
+#art-1{
+    background-color: m-color(2);
+    // background-color: m-color(5);
+    .intro{
+        background-color: m-color(5);
+        color: m-color(2); 
+        img{
+            width: 50%;
+            max-width: 200px;
+            border-radius: 20pc;
+        }
+    }
+    section{
+        color: m-color(5); 
+        background-color:m-color(3);      
+
+
+    }
+}
+#art-2{
+    background-color: m-color(5);
+    // background-color: m-color(2);
+    section{
+        background-color: m-color(1);
+    }
+}
+        
+section{
+    .content{text-align: center;}
+    #overflow{
+    overflow: hidden;
+    max-height: 250px;
+}
+
+    img{
+        width: 100%;
+    }
+            img:hover {
+                transform: scale(1.1);
+        }
+}

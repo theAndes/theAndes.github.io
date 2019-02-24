@@ -1,1 +1,155 @@
-<h1> This is the io page.</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/main.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="bg-image"></div>
+        <div class="intro">
+            <h1 id="hello"> Hello,</h1>
+            <h1 id="world"> World.</h1>
+        </div>
+    </header>
+
+    <main>
+        <nav id="navbar" class="top">
+
+            <i class="direction fas fa-angle-double-up up"></i>
+            <h3 class="head">AE</h3>
+            <i class="direction fas fa-angle-double-down down"></i>
+
+        </nav>
+
+        <article id="art-1">
+            <section>
+                <div class="content intro">
+
+                    <img src="assets/images/AE.jpg" alt="x" title="x">
+
+                    <p>Hey, glad you found my page. My name is Andrew, and I live out here in the greater Austin area
+                        (cough cough Round Rock).
+                        Go ahead and check out some of my stuff. If you want to reach out to me, go ahead, my contact
+                        info is at the very end.
+                        Enjoy your stay!</p>
+                </div>
+            </section>
+            <article id='projects' class="slide">
+                <section>
+                    <div class="content">
+                        <div id="overflow">
+                            <img src="assets/images/API-AJAX.jpg" alt="">
+                        </div>
+                        <p>Utlizing rest API</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <div id="overflow">
+                            <img src="assets/images/Firebase.png" alt="">
+                        </div>
+                        <p> Read/Write to Google Firebase Realtime Database</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <div id="overflow">
+                            <img src="assets/images/theDog.jpg" alt="">
+                        </div>
+                        <p>Some Javascript and DOM manipulation</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <div id="overflow">
+                            <img src="assets/images/Trivia.jpg" alt="">
+                        </div>
+                        <p>Timers, randomizers, lists, and objects. Javascript/JQUERY fun.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <div id="overflow">
+                            <img src="assets/images/RPG.jpg" alt="">
+                        </div>
+                        <p>The Kiddo had fun drawing this one out for me.</p>
+                    </div>
+                </section>
+            </article>
+        </article>
+        <article id="art-2" class="slide">
+            <section>
+                <div class="content">
+                    Those are a few of my Items. If you have any suggestions for improvement or want to just say hi. Send me a message below.
+                </div>
+            </section>
+            <div class="container">
+                <h1 class="brand">My Name again is Andrew Esquivel</h1>
+                <div class="wrapper animated bounceInLeft">
+                    <div class="company-info">
+                        <h3>Your Info :)</h3>
+                        
+                    </div>
+                    <div class="contact">
+                        <h3> Your Info</h3>
+                        <!--Alert-->
+                        <div class="alert">Your Message has been sent!</div>
+                    
+                        <form id="contact-form">
+                            <p>
+                                <label>Name</label>
+                                <input id="name" type="text" name="name" required>
+                            </p>
+                            <p>
+                                <label>Company</label>
+                                <input id="company" type="text" name="company">
+                            </p>
+                            <p>
+                                <label>Email</label>
+                                <input id="email" type="email" name="email" required>
+                            </p>
+                            <p>
+                                <label>Phone Number</label>
+                                <input id="phone" type="text" name="phone">
+                            </p>
+                            <p class="full">
+                                <label>Message</label>
+                                <textarea id="message" name="message" rows="5"></textarea>
+                            </p>
+                            <p class="full">
+                                <button type="submit">Submit</button>
+                            </p>
+                        </form>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+        </article>
+    </main>
+    
+    <Footer class="company-info">
+        <h3>AE</h3>
+        <ul>
+            <li><i class="fa fa-road"></i> Fake Street</li>
+            <li><i class="fa fa-phone"></i> (512) 867-5309 (not real)</li>
+            <li><i class="fa fa-envelope"></i> email@email.com</li>
+        </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/main.js"></script>
+</body>
+
+</html>
